@@ -1,0 +1,36 @@
+# Secrets — never commit
+.env
+.env.local
+*.key
+secrets/
+
+# Test outputs
+test*.png
+test*.jpg
+test*.webp
+*.tmp.png
+out/
+output/
+generated/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project-specific
+examples/*.png
+examples/*.jpg
+!examples/.keep
