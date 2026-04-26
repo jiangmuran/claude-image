@@ -52,7 +52,7 @@ gpt-image-2/
 #### Claude Code(一行)
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git ~/.claude/skills/gpt-image-2 \
+git clone https://github.com/jiangmuran/claude-image.git ~/.claude/skills/gpt-image-2 \
   && bash ~/.claude/skills/gpt-image-2/install.sh
 ```
 
@@ -63,7 +63,7 @@ git clone https://github.com/jiangmuran/gpt-image-2.git ~/.claude/skills/gpt-ima
 #### Codex(或任何扫描 `~/.agents/skills/` 的 agent)
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git ~/.agents/skills/gpt-image-2 \
+git clone https://github.com/jiangmuran/claude-image.git ~/.agents/skills/gpt-image-2 \
   && bash ~/.agents/skills/gpt-image-2/install.sh
 ```
 
@@ -72,7 +72,7 @@ git clone https://github.com/jiangmuran/gpt-image-2.git ~/.agents/skills/gpt-ima
 #### 手动 / 其他 agent / 直接命令行
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git
+git clone https://github.com/jiangmuran/claude-image.git
 cd gpt-image-2
 
 echo 'export OPENAI_IMAGE_API_KEY="sk-..."' >> ~/.zshrc
@@ -266,7 +266,7 @@ Three design decisions that make this load-bearing instead of decorative:
 #### Claude Code (one-liner)
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git ~/.claude/skills/gpt-image-2 \
+git clone https://github.com/jiangmuran/claude-image.git ~/.claude/skills/gpt-image-2 \
   && bash ~/.claude/skills/gpt-image-2/install.sh
 ```
 
@@ -277,7 +277,7 @@ After install, Claude auto-discovers the skill on the next image request — no 
 #### Codex (or any agent that scans `~/.agents/skills/`)
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git ~/.agents/skills/gpt-image-2 \
+git clone https://github.com/jiangmuran/claude-image.git ~/.agents/skills/gpt-image-2 \
   && bash ~/.agents/skills/gpt-image-2/install.sh
 ```
 
@@ -286,7 +286,7 @@ Same skill, same script, same env vars.
 #### Manual / other agents / direct CLI use
 
 ```bash
-git clone https://github.com/jiangmuran/gpt-image-2.git
+git clone https://github.com/jiangmuran/claude-image.git
 cd gpt-image-2
 
 echo 'export OPENAI_IMAGE_API_KEY="sk-..."' >> ~/.zshrc
