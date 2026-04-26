@@ -33,6 +33,23 @@ SKILL_DIR="$HOME/.claude/skills/gpt-image-2"   # adjust if installed elsewhere
 GPT_IMG="python3 $SKILL_DIR/scripts/gpt_image.py"
 ```
 
+### Env vars in Claude Code's Bash subshell
+
+Claude Code's Bash tool runs **non-interactive shells that do NOT auto-source `~/.zshrc`**. If the user has the credentials in their shell rc and you get `ERROR: set OPENAI_IMAGE_API_KEY`, prefix every call with a source:
+
+```bash
+source ~/.zshrc 2>/dev/null && python3 $SKILL_DIR/scripts/gpt_image.py generate -p "..." -o ./out.png
+```
+
+Or, if the user provided the key in-conversation, pass it inline (don't write it to disk yourself):
+
+```bash
+OPENAI_IMAGE_API_KEY="sk-..." OPENAI_IMAGE_BASE_URL="https://jmrai.net/v1" \
+  python3 $SKILL_DIR/scripts/gpt_image.py generate -p "..." -o ./out.png
+```
+
+Test once at the start of a session: `source ~/.zshrc && echo "${OPENAI_IMAGE_API_KEY:0:10}"`. If that prints a key prefix, you can safely use the source-prefix pattern for the rest of the session.
+
 ### Generate
 
 ```bash
