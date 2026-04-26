@@ -96,7 +96,7 @@ open test.png
 
 如果没设置 image 专用的两个,会回退到 `OPENAI_API_KEY` / `OPENAI_BASE_URL`——如果你已经在用同一个 key 跑 chat completions 这就很方便。
 
-**充值地址:** https://order.jmrai.net
+**自建反代image 2的API 原生支持此skill >_< ** https://order.jmrai.net
 
 > **不要把 key commit 进去。** `.gitignore` 已经排除了 `.env`。`.env.example` 只是模板。
 
