@@ -1,4 +1,4 @@
-# gpt-image-2
+# Claude image
 
 > 教 Claude Code、Codex 等 agent 真正用好 GPT Image 2 的 drop-in skill 包。
 > A drop-in skill that teaches Claude Code, Codex, and other agents to actually use GPT Image 2.
