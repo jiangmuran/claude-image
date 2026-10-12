@@ -92,11 +92,11 @@ open test.png
 | 变量 | 必填 | 默认值 |
 |------|-----|--------|
 | `OPENAI_IMAGE_API_KEY` | 是 | — |
-| `OPENAI_IMAGE_BASE_URL` | 否 | `https://jmrai.net/v1` |
+| `OPENAI_IMAGE_BASE_URL` | 否 | `https://agiplan.dev/v1` |
 
 如果没设置 image 专用的两个,会回退到 `OPENAI_API_KEY` / `OPENAI_BASE_URL`——如果你已经在用同一个 key 跑 chat completions 这就很方便。
 
-**自建反代image 2的API 原生支持此skill >_< ** https://order.jmrai.net
+可以前往 https://agiplan.dev 购买划算的token套餐
 
 > **不要把 key commit 进去。** `.gitignore` 已经排除了 `.env`。`.env.example` 只是模板。
 
